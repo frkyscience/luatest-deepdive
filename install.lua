@@ -1,4 +1,4 @@
-local chestMonitorUrl = "https://github.com/frkyscience/luatest-deepdive"
+local chestMonitorUrl = "https://raw.githubusercontent.com/frkyscience/luatest-deepdive/main/chest_monitor.lua"
 
 local loadingArt = [[
 
@@ -23,8 +23,8 @@ ___ ___  _ __ ___  _ __ | | ___ |_| ___
 
 ]]
 
-print(loadingArt)
-print("Downloading chest_monitor.lua....")
+    print(loadingArt)
+    print("Downloading chest_monitor.lua....")
 
 local response = http.get(chestMonitorUrl)
 if response then
@@ -34,9 +34,9 @@ if response then
 
     local file = fs.open("chest_monitor.lua", "w")
     file.write(content)
-    file.close
+    file.close()
 
-print("chest_monitor.lua download complete")
+    print("chest_monitor.lua download complete")
 
 local startupScript = [[
     shell.run("chest_monitor.lua")

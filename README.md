@@ -1,15 +1,18 @@
-LuaTest DeepDive: Chest Analyzer
-Installation and Setup
-To set up the Chest Analyzer, follow these steps:
+# LuaTest DeepDive: Chest Analyzer
 
+
+
+## Installation and Setup
+To set up the Chest Analyzer, follow these steps:
+___________________________________________________________________________________________-
 Download the Installation Script: Use wget to download the installation script from the repository.
 
-lua
+## lua
 Code kopiëren
 wget run https://raw.githubusercontent.com/frkyscience/luatest-deepdive/main/install.lua
 Run the Installation Script: This script will clone the necessary repository and set up the chest analyzer in your game environment.
 
-Features
+## Features
 Real-Time Monitoring: The chest analyzer updates every 10 seconds.
 Content Display: The current contents of the chest are displayed in real-time.
 Usage

@@ -15,7 +15,10 @@ end
 local function print_item_details(chest, monitor, slot)
     local item = chest.getItemDetail(slot)
     if item and item.count > 0 then
-        center_text(monitor, item.displayName or item.name, slot * 2 - 1)
+        local displayName = item.displayName or item.name
+        displayName = displayName:gsub("^minecraft:", "") 
+        
+        center_text(monitor, displayName, slot * 2 - 1)
         
         monitor.setTextColor(colors.gray)
         center_text(monitor, tostring(item.count), slot * 2)

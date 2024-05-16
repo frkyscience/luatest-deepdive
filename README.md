@@ -3,7 +3,8 @@
 
 
 ## Installation and Setup
-To set up the Chest Analyzer, follow these steps: \
+To set up the Chest Analyzer, follow these steps: 
+
 ___________________________________________________________________________________________
 Download the Installation Script: Use wget to download the installation script from the repository.
 
